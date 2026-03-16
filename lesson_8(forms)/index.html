@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Muhammad Kamran">
+    <meta name="dsicription" content="This page is containing all the things that I have learned in html">
+    <title>My First web page</title>
+    <link rel="icon" href="img/html5_logo.png">
+    <link rel="stylesheet" href="file.css">
+  </head>
+
+  <body>
+    <header>
+      <h1>My Goals for the year</h1>
+
+      <nav aria-label="primary-nevigation">
+        <ul>
+          <li>
+            <a href="#html">Learning HTML</a>
+          </li>
+          <li>
+            <a href="#vocation">Planning my Vacations</a>
+          </li>
+          <li>
+            <a href="#contact">Contact Me</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <hr>
+    <main>
+      <article id="html">
+        <h2>I'm ready to learn HTML</h2>
+        <p>This is my first web page.</p>
+        <section>
+          <h3>HTML5</h3>
+          <img src="img/html5_logo.png" alt="html5_logo" title="I am learning HTML" height="250" width="250" loading="lazy">
+          <figure>
+            <figcaption>En example of HTML5</figcaption>
+            <p><code>&lt;h1&gt;HTML&lt;/h1&gt;</code></p>
+          </figure>
+        </section>
+
+        <section>
+          <h3>My Daily Schedule</h3>
+          <p>Let me tell you how:</p>
+          <ol>
+            <li>...I learn more about web dev.</li>
+            <li>...I plan out my Schedule.</li>
+            <li>
+              ...I am using resources from
+              <abbr title="Mozilla Developer Network"
+                ><a href="https://developer.mozilla.org/">MDN</a></abbr>
+            </li>
+          </ol>
+          <aside>
+            <details>
+              <summary><strong>Guess <mark>Number of hours</mark> I code per day</strong></summary>
+              <p>I start at <time datetime="08:00">8 am</time> and I write code for <time datetime="PT3H">3 hours </time> every morning.</p>
+            </details>
+          </aside>
+          <br>
+          <table>
+            <caption>My Daily Schedule</caption>
+            <thead>
+              <tr>
+                <th>&nbsp;</th>
+                <th scope="col">Time</th>
+                <th scope="col">Activity</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Morning</th>
+                <td>
+                  <time datetime="08:00">8 am</time>-<time datetime="11:00">11 am</time>
+                </td>
+                <td>Write code</td>
+              </tr>
+              <tr>
+                <th scope="row">Break</th>
+                <td>
+                  <time datetime="11:00">11 am</time>-<time datetime="12:00">12 pm</time>
+                </td>
+                <td>Eat Lunch</td>
+              </tr>
+              <tr>
+                <th scope="row">Afternoon</th>
+                <td>
+                  <time datetime="12:00">12 pm</time>-<time datetime="15:00">15 pm</time>
+                </td>
+                <td>study for other courses</td>
+              </tr>
+              
+              <tr>
+                <th rowspan="2" scope="row">Night</th>
+                <td rowspan="2">All Other time</td>
+                <td>Free Time</td>
+              </tr>
+              <tr>
+                <td>Sleep</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="3">And that's what I do every day, 5 days a week. Just eat, sleep, code,...,recharge!</td>
+              </tr>
+            </tfoot>
+          </table>
+        </section>
+      </article>
+
+      <hr>
+
+      <article id="vocation">
+        <h2>I Am Also Planning a Vacation</h2>
+        <p>I have been working hard and <em>really need a gateway.</em></p>
+        <p>
+          I live in <abbr title="Panjab Pakistan">PN</abbr>. So I want visit a
+          Beach.
+        </p>
+        
+        <section>
+          <h3>Place I'd like to visit</h3>
+          <ul>
+            <li>
+              <p>I've heard good things about the Lahore.</p>
+              <figure>
+                <img src="img/lahore(2).jpg" alt="Minar-e-Pakistan" title="beauitifull view of Lahore" width="350" height="267" loading="lazy"
+                >
+                <figcaption>
+                  <em>This is a beauitifull view of Lahore</em>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <p>I've heard good things about going here:</p>
+              <address>
+                Karachi district Sindh, <br>
+                Pakistan
+              </address>
+              <figure>
+                <img src="img/vacations.png" alt="vacations" title="It is 5'o clock at anywhere" width="350" height="267" loading="lazy"
+                >
+              </figure>
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Place I Want to Avoid</h3>
+          <dl>
+            <dt>North Pole</dt>
+            <dd>I heard this is <strong>Cold</strong>!.</dd>
+
+            <dt>South Pole</dt>
+            <dd>this is also cold.</dd>
+
+            <dt>Mountain Tops</dt>
+            <dd>these are also cold.</dd>
+          </dl>
+        </section>
+      </article>
+      <hr>
+      <!-- form validation -->
+      <article id="contact">
+        <h2>Contact Us</h2>
+        <p>I'd really like to hear you.</p>
+
+        <form action="https://httpbin.org./get" method="get">
+          <fieldset>
+            <legend>Personal Information:</legend>
+          <p>
+            <label for="firstName">First Name:</label>
+            <input type="text" name="firstName" id="firstName" placeholder="Jane" autocomplete="on" required autofocus>
+          </p>
+          <p>
+            <label for="lastName">Last Name:</label>
+            <input type="text" name="lastName" id="lastName" placeholder="Deo" autocomplete="on" required>
+          </p>
+          <p>
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" placeholder="Your secret" required>
+          </p>
+          <p>
+            <label for="phone">Phone:</label>
+            <input type="tel" name="phone" id="phone" placeholder="1234567890" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required>
+          </p>
+          <p>
+            <label for="decade">favirot Decade:</label>
+            <input type="number" name="decade" id="decade" min="1950" max="2030" step="10" value="1980" required>
+          </p>
+          <p>
+            <label for="coffee">favirote Coffee:</label>
+              <select name="coffee" id="coffee" multiple size="5"><!--select more than one option by press control and select items-->
+                <optgroup label="Coffees">
+                  <option value="regular coffee">Regular Coffee</option>
+                  <option value="iced coffee">Iced Coffee</option>
+                </optgroup>
+                <optgroup label="Espresso Drinks">
+                  <option value="latte" selected>Latte</option>
+                  <option value="cappuccino">Cappuccino</option>
+                  <option value="cortado">Cortado</option>
+                  <option value="americano">Americano</option>
+                </optgroup>
+                <option value="other">Other</option>
+              </select>
+          </p>
+
+          <!-- Alternate Represent of data -->
+          <!-- <p>
+            <label for="coffee">favirote Coffee:</label>
+            <input type="text" name="coffee" id="coffee" list="coffee-list">
+                <datalist id="coffee-list">
+                  <option value="regular coffee">
+                  <option value="iced coffee">
+                  <option value="latte" selected>
+                  <option value="cappuccino">
+                  <option value="cortado">
+                  <option value="americano">
+                  <option value="other">
+                </datalist>
+          </p> -->
+          </fieldset>
+          <br>
+          <fieldset>
+            <legend>What is your favirote food?</legend>
+            <p>
+              <input type="radio" name="food" id="taccos">
+              <label for="taccos">Taccos</label>
+            </p>
+            <p>
+              <input type="radio" name="food" id="pizza">
+              <label for="taccos">Pizza</label>
+            </p>
+            <p>
+              <input type="radio" name="food" id="other">
+              <label for="taccos">Others</label>
+            </p>
+          </fieldset>
+          <br>
+          <fieldset>
+            <legend>Do you have pets?</legend>
+            <p>
+              <input type="checkbox" name="pets" id="dog" value="dog">
+              <label for="dog">Dog</label>
+            </p>
+            <p>
+              <input type="checkbox" name="pets" id="cat" value="cat">
+              <label for="cat">Cat</label>
+            </p>
+            <p>
+              <input type="checkbox" name="pets" id="fish" value="fish">
+              <label for="fish">Fish</label>
+            </p>
+            <p>
+              <input type="checkbox" name="otherPets" id="otherPets" value="otherPets">
+              <label for="otherPets">other Pets</label>
+            </p>
+          </fieldset>
+          <br>
+          <fieldset>
+            <legend>Send me a note.</legend>
+            <textarea name="massage" id="massage" cols="55" rows="5" placeholder="type your massege"></textarea>
+          </fieldset>
+          <br>
+          <button type="submit">Submit</button>
+          <button type="submit" formaction="https://httpbin.org./post" formmethod="post">Post</button>
+          <button type="reset">Reset</button>
+        </form>
+
+      </article>
+    </main>
+    <hr>
+
+    <footer>
+      &lt;&lt;&lt; &copy; <a href="about.html">Muhammad Kamran</a> &gt;&gt;&gt;
+      <p>
+        <a href="#">Back to Top</a>
+      </p>
+    </footer>
+  </body>
+</html>
